@@ -102,7 +102,7 @@ export default function Form({ action, data, Order, hide }) {
                       }
                     >
                       <option value="">Select a product</option>
-                      {availableProducts.map((product) => (
+                      {availableProducts.map((product,index) => (
                         <option key={product.id} value={product.id}>
                           {product.name}
                         </option>

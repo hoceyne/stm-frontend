@@ -8,6 +8,7 @@ import Register from "./Auth/Register.jsx";
 import Library from "./Components/Library/Library.jsx";
 import Form from "./Components/Library/Orders/Form.jsx";
 import OrdersList from "./Components/Library/Orders/OrdersList.jsx";
+import ProductsList from "./Components/Library/Products/ProductsList.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="/*" element={<App />} />
                 <Route path="/order" element={<Form />} />
                 <Route path="/orders" element={<OrdersList />} />
+                <Route path="/products" element={<ProductsList />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
