@@ -9,6 +9,7 @@ import Library from "./Components/Library/Library.jsx";
 import Form from "./Components/Library/Orders/Form.jsx";
 import OrdersList from "./Components/Library/Orders/OrdersList.jsx";
 import ProductsList from "./Components/Library/Products/ProductsList.jsx";
+import Product from "./Components/Library/Products/Product.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
@@ -17,10 +18,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="/login" exact element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/library" element={<Library />} />
-                <Route path="/*" element={<App />} />
                 <Route path="/order" element={<Form />} />
                 <Route path="/orders" element={<OrdersList />} />
+                <Route path="/products/:id" element={<Product />} />
                 <Route path="/products" element={<ProductsList />} />
+                
+                <Route path="/*" element={<App />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
